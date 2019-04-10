@@ -7,7 +7,7 @@ for(var i=0;i<btns.length;i++){
 
     });
 }
-document.addEventListener("keypress",function(event){
+document.addEventListener("keydown",function(event){
   makeSound(event.key);
   buttonAni(event.key);
 });
