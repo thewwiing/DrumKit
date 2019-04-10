@@ -7,7 +7,7 @@ for(var i=0;i<btns.length;i++){
 
     });
 }
-document.addEventListener("keydown",function(event){
+document.addEventListener("keypress",function(event){
   makeSound(event.key);
   buttonAni(event.key);
 });
@@ -43,7 +43,8 @@ function makeSound(key){
       break;
 
 
-    default:console.log(this.innerHTML);
+    default:
+      console.log(this.innerHTML);
   }
 }
 function buttonAni(key){
@@ -53,5 +54,3 @@ function buttonAni(key){
     activeBtn.classList.remove("pressed");
   },100);
 }
-
-// this.style.color="white";
